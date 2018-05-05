@@ -1,5 +1,6 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 require 'droplet_kit'
+require 'timeout'
 
 puts ""
 puts "-----------------------------------Server creation-----------------------------------"
@@ -12,7 +13,7 @@ puts ""
 puts "--------------------------------------------------------------------------------------"
 puts ""
 puts "What region should the server be located in?
-          1.  Amsterdam        (Datacenter 2)
+          1.  Amsterdam        (Datacenter 2 - Curently not available)
           2.  Amsterdam        (Datacenter 3)
           3.  Bangalore
           4.  Frankfurt
@@ -20,7 +21,7 @@ puts "What region should the server be located in?
           6.  New York         (Datacenter 1)
           7.  New York         (Datacenter 2 - Curently not available)
           8.  New York         (Datacenter 3)
-          9.  San Francisco    (Datacenter 1)
+          9.  San Francisco    (Datacenter 1 - Curently not available)
           10. San Francisco    (Datacenter 2)
           11. Singapore
           12. Toronto
@@ -89,20 +90,3 @@ puts "Server has been created!"
 puts ""
 puts "--------------------------------------------------------------------------------------"
 puts ""
-puts "The details of the network that are configured for the Droplet instance.
-Using the information (ip_address) received to connect to the server via SSH:"
-puts ""
-puts ""
-
-droplets = client.droplets.all
-droplets.each do |doc|
-    puts doc["networks"]
-end
-
-puts ""
-puts ""
-puts"--------------------------------------------------------------------------------------"
-puts ""
-puts "You can use the command: ssh 156.21.54.228 (example) for further customization of your server."
-puts ""
-puts"--------------------------------------------------------------------------------------"
