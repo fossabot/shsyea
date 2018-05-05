@@ -1,4 +1,4 @@
-# Auto configurator OpenVPN and SOCKS5 Proxy
+# Auto configure OpenVPN and SOCKS5 Proxy on VPS
 ## Installing
 ### Preparatory actions
 ##### Create SSH key to log on.
@@ -24,12 +24,11 @@ $ gem install droplet_kit
 $ ruby create_droplet.rb
 ```
 ##### During the execution of the script, you will need to specify the Personal access tokens (generate on [site DigitalOcean](https://cloud.digitalocean.com/settings/api/tokens))
-##### After creating the server, you need to connect to it using the ip address on the Dashboard DigitalOcean
+##### After creating the server, you need to connect to it using the ip address on the Dashboard DigitalOcean.
 ##### Connect to the server:
 ```
 $ ssh ip_address
 ```
-### Building a openvpn server system
 ##### Import the shsyea repository and go to the location directory.  
 ```
 $ git clone https://github.com/exctzo/shsyea.git && cd shsyea
@@ -48,11 +47,11 @@ local$ sftp root@ip_address:client-configs/files/* ~/
 ```
 ### Usage
 #### It remains only to download the OpenVPN for your platform and import the required profile.
-##### Script based on instruction [site DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server-on-ubuntu-16-04)(more further)
+##### Script based on instruction [site DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server-on-ubuntu-16-04) (more further).
 ## Installing SOCKS5 (dante-server)
 ```
 $ chmod +x socks5.sh
 $ ./socks5.sh
 ```
 ### Usage
-#### Use the entered data to access the proxy server on port 1080 and ip address from Dashboard DigitalOcean.
+#### Use the entered data (user & pass) to access the proxy server on port 1080 and ip address from Dashboard DigitalOcean.
