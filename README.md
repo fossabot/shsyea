@@ -1,4 +1,6 @@
 # Auto configure OpenVPN and SOCKS5 Proxy on VPS
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fexctzo%2Fshsyea.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fexctzo%2Fshsyea?ref=badge_shield)
+
 ## Installing
 ### Preparatory actions
 ##### Create SSH key to log on.
@@ -55,3 +57,7 @@ $ ./socks5.sh
 ```
 ### Usage
 #### Use the entered data (user & pass) to access the proxy server on port 1080 and ip address from Dashboard DigitalOcean.
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fexctzo%2Fshsyea.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fexctzo%2Fshsyea?ref=badge_large)
